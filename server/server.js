@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 
-// const routes = require('./controllers');
+const routes = require('./routes');
 // const helpers = require('./utils/helpers');
 const Sequelize = require('sequelize');
 const config = require('./config/config');
@@ -32,7 +32,7 @@ testConnection();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // app.use(express.static(path.join(__dirname, 'public')));
-// app.use(routes);
+app.use(routes);
 
 // Start the server
 
