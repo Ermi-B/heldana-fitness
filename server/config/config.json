@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Password123",
+    "database": "heldana_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "sync": { "force": true }
+  },
+  "test": {
+    "username": "root",
+    "password": "Password123",
+    "database": "heldana_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "sync": { "force": true }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "heldana_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
