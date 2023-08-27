@@ -5,7 +5,7 @@ const UserController = require('../controllers/userController');
 
 //Define Routes
 router.get('/profile', UserController.getProfile)
-// router.post('/register', UserController.register);
+// router.post('/register', UserController.register); //use jwt auth
 // router.post('/login', UserController.login);
 
 module.exports = router;

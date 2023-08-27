@@ -1,5 +1,4 @@
 const db = require('../models')
-const config = require('../config/config.json')
 const User = db.user
 
 
@@ -13,4 +12,12 @@ exports.getProfile = async (req, res) => {
     }catch(err){
         res.status(500).json({message: err.message});
     }
+}
+
+exports.register = async (req, res) => {
+    
+}
+
+exports.login = async (req, res) => {
+    
 }
