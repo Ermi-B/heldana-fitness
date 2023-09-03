@@ -1,5 +1,6 @@
 const db = require("../models");
 const Blog = db.Blog;
+const User = db.User;
 
 exports.createPost = async (req, res) => {
   try {
@@ -18,9 +19,12 @@ exports.createPost = async (req, res) => {
 
 exports.getAllPosts= async (req, res) => {
 try{
-    const blogs = await Blog.findAll({})
+    const blogs = await Blog.findAll({
+      include:[{model:User}]
+    })
     if(!blogs){
         res.status(404).json({message:"no blogs found!"});
+        return
     }
     res.status(200).json(blogs);
 }catch (err) {
