@@ -1,6 +1,5 @@
 const db = require("../models");
 const Blog = db.Blog;
-const Category = db.Category;
 const Product = db.Product;
 
 
