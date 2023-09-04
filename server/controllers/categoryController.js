@@ -73,7 +73,7 @@ exports.createCategory = async (req, res) => {
         // Delete the blog record
         await category.destroy();
   
-        res.status(201).json({product: category,message:"deleted successfully"}); 
+        res.status(201).json({category,message:"deleted successfully"}); 
       } else {
         res.status(404).json({ message: 'category not found' });
       }
